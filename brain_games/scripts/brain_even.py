@@ -5,7 +5,7 @@ from brain_games.cli import name
 
 def logic_even():
     counter = 0
-    while counter < 3 :
+    while counter < 3:
         a = random.randint(0, 100)
         print('Answer "yes" if the number is even, otherwise answer "no".')
         print('Question:', a)
@@ -22,6 +22,6 @@ def logic_even():
             else:
                 print(answer + " is wrong answer ;(. Correct answer was 'no' \nLet's try again, " + name + "!")
                 break
-        counter+=1
+        counter += 1
     if counter == 3:
         print("Congratulations, " + name + "!") 
