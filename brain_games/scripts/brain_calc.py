@@ -11,8 +11,8 @@ def logic_calc():
         Second_number = random.randint(0, 100)
         Random_operator = random.choice(operators)
         print("What is the result of the expression?")
-        print("Question:", First_number + Random_operator + Second_number)
-        correct_answer = eval(First_number + Random_operator + Second_number)
+        print("Question:", First_number, Random_operator, Second_number)
+        correct_answer = eval(First_number, Random_operator, Second_number)
         answer = prompt.string("Your answer: ")
         if answer == correct_answer:
             print("Correct!")
