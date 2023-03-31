@@ -5,13 +5,12 @@ from brain_games.scripts.brain_calc import logic_calc
 from brain_games.scripts.brain_gcd import logic_gcd
 
 
-
 def main():
     print("Welcome to the Brain Games!")
-    welcome_user()
-    logic_even()
-    logic_calc()
-    logic_gcd()
+    name = welcome_user()
+    logic_even(name)
+    logic_calc(name)
+    logic_gcd(name)
     
 
 

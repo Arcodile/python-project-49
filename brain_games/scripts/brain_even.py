@@ -1,9 +1,9 @@
 import random
 import prompt
-from brain_games.cli import name
+from brain_games.cli import welcome_user
 
 
-def logic_even():
+def logic_even(name):
     counter = 0
     while counter < 3:
         a = random.randint(0, 100)

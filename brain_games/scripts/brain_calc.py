@@ -1,9 +1,9 @@
 import random
 import prompt
-from brain_games.cli import name 
+from brain_games.cli import welcome_user 
 
 
-def logic_calc():
+def logic_calc(name):
     operators = ["+", "-", "*"]
     counter = 0
     while counter < 3:
