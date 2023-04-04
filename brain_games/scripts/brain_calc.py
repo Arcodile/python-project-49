@@ -3,7 +3,9 @@ import prompt
 from brain_games.cli import welcome_user 
 
 
-def logic_calc(name):
+def logic_calc(name=None):
+    if name is None:
+        name = welcome_user()
     operators = ["+", "-", "*"]
     counter = 0
     while counter < 3:
@@ -24,4 +26,5 @@ def logic_calc(name):
         print("Congratulations, " + name + "!")
         
     
- 
+if __name__ == '__main__':
+  logic_calc()
