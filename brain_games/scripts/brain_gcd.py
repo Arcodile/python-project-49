@@ -18,7 +18,9 @@ def logic_gcd(name=None):
         if str(answer) == str(correct_gcd):
             print("Correct!")
         else:
-            print("'" + str(answer) + "'" + " is wrong answer ;(. Correct answer was " + "'" + str(correct_gcd) + "'" + "\nLet's try again, " + name + "!")
+            print("'" + str(answer) + "'" + " is wrong answer ;(."
+                  "Correct answer was " + "'" + str(correct_gcd) + "'"
+                  "\nLet's try again, " + name + "!")
             break
         counter += 1
     if counter == 3:

@@ -3,7 +3,6 @@ import prompt
 from brain_games.cli import welcome_user
 
 
-
 def logic_even():
     name = welcome_user()
     counter = 0
@@ -16,18 +15,20 @@ def logic_even():
             if answer == "yes":
                 print("Correct!")
             else:
-                print(answer + " is wrong answer ;(. Correct answer was 'yes' \nLet's try again, " + name + "!")
+                print(answer + " is wrong answer ;(. Correct answer was 'yes'"
+                      "\nLet's try again, " + name + "!")
                 break
         else:
             if answer == "no":
                 print("Correct!")
             else:
-                print(answer + " is wrong answer ;(. Correct answer was 'no' \nLet's try again, " + name + "!")
+                print(answer + " is wrong answer ;(. Correct answer was 'no'"
+                      "\nLet's try again, " + name + "!")
                 break
         counter += 1
     if counter == 3:
-        print("Congratulations, " + name + "!") 
+        print("Congratulations, " + name + "!")
 
 
 if __name__ == '__main__':
- logic_even()
+    logic_even()
