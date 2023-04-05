@@ -15,14 +15,14 @@ def logic_calc():
         print("Question:", int(First_number), Random_operator,
               int(Second_number))
         answer = prompt.string("Your answer: ")
-        correct_answer = eval(" int(First_number) " + Random_operator +
-                              " int(Second_number)")
+        correct_answer = eval(" int(First_number) " + Random_operator
+                              + " int(Second_number)")
         if str(answer) == str(correct_answer):
             print("Correct!")
         else:
             print("'" + str(answer) + "'" + " is wrong answer ;(."
-                  "Correct answer was " +
-                  "'" + str(correct_answer) + "'"
+                  "Correct answer was "
+                  + "'" + str(correct_answer) + "'"
                   "\nLet's try again, " + name + "!")
             break
         counter += 1
