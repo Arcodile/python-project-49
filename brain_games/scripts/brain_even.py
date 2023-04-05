@@ -4,9 +4,8 @@ from brain_games.cli import welcome_user
 
 
 
-def logic_even(name=None):
-    if name is None:
-        name = welcome_user()
+def logic_even():
+    name = welcome_user()
     counter = 0
     while counter < 3:
         a = random.randint(0, 100)
