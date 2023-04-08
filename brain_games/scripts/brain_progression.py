@@ -25,11 +25,11 @@ def logic_progression(name=None):
         unknown_element = progression[random_index]
         progression[random_index] = str("..")
         print_list(progression)
-        answer = prompt.string("Your answer: ")
-        if str(answer) == str(unknown_element):
+        user_answer = prompt.string("Your answer: ")
+        if str(user_answer) == str(unknown_element):
             print("Correct!")
         else:
-            print("'" + str(answer) + "'" + " is wrong answer ;(."
+            print("'" + str(user_answer) + "'" + " is wrong answer ;(."
                   "Correct answer was " + "'" + str(unknown_element) + "'"
                   "\nLet's try again, " + name + "!")
             break

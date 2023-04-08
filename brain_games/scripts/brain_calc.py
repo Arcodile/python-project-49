@@ -14,13 +14,13 @@ def logic_calc():
         print("What is the result of the expression?")
         print("Question:", int(First_number), Random_operator,
               int(Second_number))
-        answer = prompt.string("Your answer: ")
+        user_answer = prompt.string("Your answer: ")
         correct_answer = eval(" int(First_number) " + Random_operator
                               + " int(Second_number)")
-        if str(answer) == str(correct_answer):
+        if str(user_answer) == str(correct_answer):
             print("Correct!")
         else:
-            print("'" + str(answer) + "'" + " is wrong answer ;(."
+            print("'" + str(user_answer) + "'" + " is wrong answer ;(."
                   "Correct answer was "
                   + "'" + str(correct_answer) + "'"
                   "\nLet's try again, " + name + "!")
