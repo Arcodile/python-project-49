@@ -1,6 +1,7 @@
 import random
 import prompt
 from brain_games.cli import welcome_user
+from brain_games.logic import Answer
 
 
 def logic_calc():
@@ -17,14 +18,9 @@ def logic_calc():
         user_answer = prompt.string("Your answer: ")
         correct_answer = eval(" int(First_number) " + Random_operator
                               + " int(Second_number)")
-        if str(user_answer) == str(correct_answer):
-            print("Correct!")
-        else:
-            print("'" + str(user_answer) + "'" + " is wrong answer ;(."
-                  "Correct answer was "
-                  + "'" + str(correct_answer) + "'"
-                  "\nLet's try again, " + name + "!")
-            break
+        Break=Answer(user_answer,correct_answer,name)
+        if Break:
+             break
         counter += 1
     if counter == 3:
         print("Congratulations, " + name + "!")
