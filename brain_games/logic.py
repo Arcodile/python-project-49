@@ -17,13 +17,12 @@ def Answer(user_answer, correct_answer, name):
     return Break
 
 
-def logic(Function, article, message):
+def logic(Function, message):
     name = welcome_user()
     counter = 0
     while counter < 3:
         random_number = random.randint(0, 100)
-        print('Answer "yes" if ' + article + ' number is ' + message +
-              ',' + ' otherwise answer "no".')
+        print(message)
         print('Question:', random_number)
         user_answer = prompt.string("Your answer: ")
         correct_answer = Function(random_number)

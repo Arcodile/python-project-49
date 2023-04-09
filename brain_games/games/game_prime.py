@@ -19,7 +19,8 @@ def isCorrect(random_number):
 
 
 def logic_prime():
-    logic(isCorrect, 'given', 'prime')
+    message = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    logic(isCorrect, message)
 
 
 if __name__ == '__main__':

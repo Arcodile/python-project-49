@@ -10,7 +10,8 @@ def is_even(random_number):
 
 
 def logic_even():
-    logic(is_even, "the", "even")
+    message = 'Answer "yes" if the number is even, otherwise answer "no".'
+    logic(is_even, message)
 
 
 if __name__ == '__main__':
