@@ -2,6 +2,10 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Arcodile/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Arcodile/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a30c06db301f87cdc3df/maintainability)](https://codeclimate.com/github/Arcodile/python-project-49/maintainability)
+## Install
+```
+python3 -m pip install --user git+https://github.com/Arcodile/python-project-49.git
+```
 ### List of games to launch:
 brain-even, brain-calc, brain-gcd, brain-prime, brain-progression
 ### How to install
