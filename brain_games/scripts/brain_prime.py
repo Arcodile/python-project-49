@@ -13,6 +13,13 @@ def is_prime(n):
     return True
 
 
+def isCorrect(random_number):
+    if is_prime(random_number):
+        correct_answer = 'yes'
+    else:
+        correct_answer = "no"
+    return correct_answer
+
 def logic_prime():
     name = welcome_user()
     counter = 0
@@ -21,10 +28,7 @@ def logic_prime():
         print('Answer "yes" if given number is prime. Otherwise answer "no".')
         print('Question:', random_number)
         user_answer = prompt.string("Your answer: ")
-        if is_prime(random_number):
-            correct_answer = 'yes'
-        else:
-            correct_answer = "no"
+        correct_answer=isCorrect(random_number)
         Break = Answer(user_answer, correct_answer, name)
         if Break:
             break
