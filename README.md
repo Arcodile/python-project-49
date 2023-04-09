@@ -2,6 +2,8 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Arcodile/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Arcodile/python-project-49/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a30c06db301f87cdc3df/maintainability)](https://codeclimate.com/github/Arcodile/python-project-49/maintainability)
+###Список игр для запуска:
+brain-even, brain-calc, brain-gcd, brain-prime, brain-progression
 ### How to install
 [![asciicast](https://asciinema.org/a/NXlVmMaD2I4YCnBqCsFGQWJQA.svg)](https://asciinema.org/a/NXlVmMaD2I4YCnBqCsFGQWJQA)
 ### Brain Even
