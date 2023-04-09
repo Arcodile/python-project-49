@@ -1,4 +1,4 @@
-from brain_games.logic import Answer,logic
+from brain_games.logic import logic
 
 
 def is_even(random_number):
@@ -7,6 +7,7 @@ def is_even(random_number):
     else:
           correct_answer = "no"
     return correct_answer
+
 
 def logic_even():
    logic(is_even)
