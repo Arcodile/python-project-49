@@ -18,7 +18,7 @@ def logic_progression():
     while counter < 3:
         First_argument = random.randint(0, 10)
         Second_argument = random.randint(30, 100)
-        Step_argument = random.randint(2, 10)
+        Step_argument = random.randint(2, 5)
         progression = list(range(First_argument, Second_argument,
                                  Step_argument))
         random_index = random.randint(0, len(progression) - 1)
