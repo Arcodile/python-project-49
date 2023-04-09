@@ -18,7 +18,6 @@ def isCorrect(random_number):
     return correct_answer
 
 
-
 def logic_prime():
     logic(isCorrect)
 

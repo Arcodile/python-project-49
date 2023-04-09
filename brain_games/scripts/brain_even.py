@@ -1,17 +1,9 @@
-from brain_games.logic import logic
+from brain_games.games.game_even import logic_even
 
 
-def is_even(random_number):
-    if random_number % 2 == 0:
-           correct_answer = 'yes'
-    else:
-          correct_answer = "no"
-    return correct_answer
-
-
-def logic_even():
-   logic(is_even)
-
-
-if __name__ == '__main__':
+def main():
     logic_even()
+    
+    
+if __name__ == '__main__':
+    main()
