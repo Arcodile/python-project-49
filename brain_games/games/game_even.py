@@ -10,7 +10,7 @@ def is_even(random_number):
 
 
 def logic_even():
-   logic(is_even)
+   logic(is_even, "even")
 
 
 if __name__ == '__main__':
