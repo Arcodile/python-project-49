@@ -15,8 +15,7 @@ def logic_gcd():
         print("Question:", First_gcd_number, Second_gcd_number)
         user_answer = prompt.string("Your answer: ")
         correct_answer = math.gcd(First_gcd_number, Second_gcd_number)
-        Break= Answer(user_answer, correct_answer, name)
-        
+        Break = Answer(user_answer, correct_answer, name)
         if Break:
             break
         counter += 1

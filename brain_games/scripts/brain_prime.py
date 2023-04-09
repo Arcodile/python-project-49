@@ -1,6 +1,7 @@
 import random
 import prompt
 from brain_games.cli import welcome_user
+from brain_games.logic import Answer
 
 
 def is_prime(n):
@@ -21,19 +22,12 @@ def logic_prime():
         print('Question:', random_number)
         user_answer = prompt.string("Your answer: ")
         if is_prime(random_number):
-            if user_answer == "yes":
-                print("Correct!")
-            else:
-                print(user_answer + " is wrong answer ;(. Correct answer was 'yes'"
-                      "\nLet's try again, " + name + "!")
-                break
+            correct_answer = 'yes'
         else:
-            if user_answer == "no":
-                print("Correct!")
-            else:
-                print(user_answer + " is wrong answer ;(. Correct answer was 'no'"
-                      "\nLet's try again, " + name + "!")
-                break
+            correct_answer = "no"
+        Break = Answer(user_answer, correct_answer, name)
+        if Break:
+            break
         counter += 1
     if counter == 3:
         print("Congratulations, " + name + "!")
@@ -41,3 +35,4 @@ def logic_prime():
 
 if __name__ == '__main__':
     logic_prime()
+    

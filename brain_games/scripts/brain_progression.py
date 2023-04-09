@@ -1,6 +1,7 @@
 import random
 import prompt
 from brain_games.cli import welcome_user
+from brain_games.logic import Answer
 
 
 def print_list(list):
@@ -10,9 +11,8 @@ def print_list(list):
     print("Question: " + sentence)
 
 
-def logic_progression(name=None):
-    if name is None:
-        name = welcome_user()
+def logic_progression():
+    name = welcome_user()
     print("What number is missing in the progression?")
     counter = 0
     while counter < 3:
@@ -22,16 +22,12 @@ def logic_progression(name=None):
         progression = list(range(First_argument, Second_argument,
                                  Step_argument))
         random_index = random.randint(0, len(progression) - 1)
-        unknown_element = progression[random_index]
+        correct_answer = progression[random_index]
         progression[random_index] = str("..")
         print_list(progression)
         user_answer = prompt.string("Your answer: ")
-        if str(user_answer) == str(unknown_element):
-            print("Correct!")
-        else:
-            print("'" + str(user_answer) + "'" + " is wrong answer ;(."
-                  "Correct answer was " + "'" + str(unknown_element) + "'"
-                  "\nLet's try again, " + name + "!")
+        Break = Answer(user_answer, correct_answer, name)
+        if Break:
             break
         counter += 1
     if counter == 3:
