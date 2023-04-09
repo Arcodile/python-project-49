@@ -4,6 +4,13 @@ from brain_games.cli import welcome_user
 from brain_games.logic import Answer
 
 
+def is_even(random_number):
+    if random_number % 2 == 0:
+           correct_answer = 'yes'
+    else:
+          correct_answer = "no"
+    return correct_answer
+
 def logic_even():
     name = welcome_user()
     counter = 0
@@ -12,10 +19,7 @@ def logic_even():
         print('Answer "yes" if the number is even, otherwise answer "no".')
         print('Question:', random_number)
         user_answer = prompt.string("Your answer: ")
-        if random_number % 2 == 0:
-           correct_answer = 'yes'
-        else:
-            correct_answer = "no"
+        correct_answer = is_even(random_number)
         Break = Answer(user_answer, correct_answer, name)
         if Break:
             break
