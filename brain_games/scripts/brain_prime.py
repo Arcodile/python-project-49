@@ -1,4 +1,4 @@
-from brain_games.logic import Answer,logic
+from brain_games.logic import logic
 
 
 def is_prime(n):
