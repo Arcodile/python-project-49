@@ -19,7 +19,7 @@ def isCorrect(random_number):
 
 
 def logic_prime():
-    logic(isCorrect, 'prime')
+    logic(isCorrect, 'given', 'prime')
 
 
 if __name__ == '__main__':
