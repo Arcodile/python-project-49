@@ -1,7 +1,4 @@
-import random
-import prompt
-from brain_games.cli import welcome_user
-from brain_games.logic import Answer
+from brain_games.logic import Answer,logic
 
 
 def is_prime(n):
@@ -20,21 +17,10 @@ def isCorrect(random_number):
         correct_answer = "no"
     return correct_answer
 
+
+
 def logic_prime():
-    name = welcome_user()
-    counter = 0
-    while counter < 3:
-        random_number = random.randint(0, 100)
-        print('Answer "yes" if given number is prime. Otherwise answer "no".')
-        print('Question:', random_number)
-        user_answer = prompt.string("Your answer: ")
-        correct_answer=isCorrect(random_number)
-        Break = Answer(user_answer, correct_answer, name)
-        if Break:
-            break
-        counter += 1
-    if counter == 3:
-        print("Congratulations, " + name + "!")
+    logic(isCorrect)
 
 
 if __name__ == '__main__':
