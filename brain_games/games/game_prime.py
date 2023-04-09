@@ -18,11 +18,9 @@ def isCorrect(random_number):
     return correct_answer
 
 
-
 def logic_prime():
     logic(isCorrect, 'prime')
 
 
 if __name__ == '__main__':
     logic_prime()
-    

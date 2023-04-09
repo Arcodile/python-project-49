@@ -18,9 +18,9 @@ def logic_calc():
         user_answer = prompt.string("Your answer: ")
         correct_answer = eval(" int(First_number) " + Random_operator
                               + " int(Second_number)")
-        Break=Answer(user_answer,correct_answer,name)
+        Break = Answer(user_answer, correct_answer, name)
         if Break:
-             break
+            break
         counter += 1
     if counter == 3:
         print("Congratulations, " + name + "!")
